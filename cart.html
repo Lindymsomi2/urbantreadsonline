@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Urban Threads | Cart</title>
+
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+  >
+
+</head>
+
+<body>
+
+  <nav class="navbar">
+
+    <a href="index.html" class="logo">
+      <h2>Urban Threads</h2>
+    </a>
+
+    <div class="nav-links">
+
+      <a href="index.html">Home</a>
+
+      <a href="shop.html">Shop</a>
+
+      <a href="cart.html">
+        Cart
+        <span id="cartAmount" class="cartAmount">0</span>
+      </a>
+
+      <span id="userDisplay"></span>
+
+      <a
+        href="login.html"
+        id="loginLink"
+      >
+        Login / Sign Up
+      </a>
+
+      <button
+        id="logoutButton"
+        class="logout-btn"
+        style="display: none;"
+      >
+        Logout
+      </button>
+
+    </div>
+
+  </nav>
+
+  <main>
+
+    <section class="cart-header">
+
+      <h1>Your Shopping Cart</h1>
+
+      <p id="cartLoading">
+        Loading cart...
+      </p>
+
+    </section>
+
+    <p
+      id="cartError"
+      class="error-message"
+    ></p>
+
+    <section
+      id="label"
+      class="text-center"
+    ></section>
+
+    <section
+      id="shopping-cart"
+      class="shopping-cart"
+    ></section>
+
+    <section
+      id="cartSummary"
+      class="cart-summary"
+    ></section>
+
+  </main>
+
+  <script
+    type="module"
+    src="js/cart.js"
+  ></script>
+
+</body>
+
+</html>

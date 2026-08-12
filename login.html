@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urban Threads | Login</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">
+      Urban Threads
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li>
+        <a href="index.html">
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="shop.html">
+          Shop
+        </a>
+      </li>
+      <li>
+        <a href="cart.html" class="nav-cart-link">
+          <span class="cart-icon">🛒</span>
+          Cart
+          <span id="cartAmount" class="cartAmount">0</span>
+        </a>
+      </li>
+      <li class="nav-user">
+        <span
+          id="nav-user-greeting"
+          class="nav-user-greeting hidden"
+        ></span>
+        <a
+          href="login.html"
+          id="nav-auth"
+          class="active"
+        >
+          Login / Sign Up
+        </a>
+        <button
+          id="nav-logout"
+          class="btn-logout hidden"
+          type="button"
+        >
+          Logout
+        </button>
+      </li>
+    </ul>
+  </nav>
+  <!-- Authentication Page -->
+  <main class="auth-page">
+    <div class="auth-container">
+      <!-- ========================= -->
+      <!-- SIGN UP FORM - LEFT SIDE   -->
+      <!-- ========================= -->
+      <div class="auth-card signup-card">
+        <!-- Error Message -->
+        <div
+          id="auth-error"
+          class="alert alert-error hidden"
+          role="alert"
+        ></div>
+        <!-- Success Message -->
+        <div
+          id="auth-success"
+          class="alert alert-success hidden"
+          role="alert"
+        ></div>
+        <h2>
+          Sign Up
+        </h2>
+        <form
+          id="signup-form"
+          class="auth-form"
+          novalidate
+        >
+          <div class="form-group">
+            <label for="signup-email">
+              Enter your email
+            </label>
+            <input
+              type="email"
+              id="signup-email"
+              required
+              autocomplete="email"
+              placeholder="you@example.com"
+            >
+          </div>
+          <div class="form-group">
+            <label for="signup-password">
+              Create a password
+            </label>
+            <input
+              type="password"
+              id="signup-password"
+              required
+              autocomplete="new-password"
+              placeholder="min. 8 characters"
+              minlength="8"
+            >
+          </div>
+          <div class="form-group">
+            <label for="signup-confirm">
+              Confirm your password
+            </label>
+            <input
+              type="password"
+              id="signup-confirm"
+              required
+              autocomplete="new-password"
+              placeholder="Confirm password"
+              minlength="8"
+            >
+          </div>
+          <button
+            type="submit"
+            class="btn btn-primary"
+          >
+            Signup
+          </button>
+        </form>
+        <p class="auth-switch">
+          Already have an account? 
+          <a href="#login" class="auth-link">Login</a>
+        </p>
+      </div>
+      
+      <!-- ========================= -->
+      <!-- LOGIN FORM - RIGHT SIDE    -->
+      <!-- ========================= -->
+      <div class="auth-card login-card">
+        <!-- Error Message -->
+        <div
+          id="auth-error-login"
+          class="alert alert-error hidden"
+          role="alert"
+        ></div>
+        <!-- Success Message -->
+        <div
+          id="auth-success-login"
+          class="alert alert-success hidden"
+          role="alert"
+        ></div>
+        <h2>
+          Login
+        </h2>
+        <form
+          id="login-form"
+          class="auth-form"
+          novalidate
+        >
+          <div class="form-group">
+            <label for="login-email">
+              Enter your email
+            </label>
+            <input
+              type="email"
+              id="login-email"
+              required
+              autocomplete="email"
+              placeholder="you@example.com"
+            >
+          </div>
+          <div class="form-group">
+            <label for="login-password">
+              Enter your password
+            </label>
+            <input
+              type="password"
+              id="login-password"
+              required
+              autocomplete="current-password"
+              placeholder="Your password"
+            >
+          </div>
+          <div class="form-group">
+            <a href="#" class="forgot-password">Forgot password?</a>
+          </div>
+          <button
+            type="submit"
+            class="btn btn-primary"
+          >
+            Login
+          </button>
+        </form>
+        <p class="auth-switch">
+          Don't have an account? 
+          <a href="#signup" class="auth-link">Signup</a>
+        </p>
+      </div>
+    </div>
+  </main>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-brand">
+      Urban Threads
+    </div>
+    <p>
+      &copy; 2026 Urban Threads. All rights reserved.
+    </p>
+  </footer>
+  <!-- JavaScript -->
+  <script
+    type="module"
+    src="js/auth.js"
+  ></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Urban Threads | Shop</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+  <nav class="navbar">
+
+    <a href="index.html" class="logo">
+      <h2>Urban Threads</h2>
+    </a>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="cart.html">
+        Cart
+        <span id="cartAmount" class="cartAmount">0</span>
+      </a>
+
+      <span id="userDisplay"></span>
+
+      <a href="login.html" id="loginLink">Login / Sign Up</a>
+
+      <button id="logoutButton" class="logout-btn" style="display: none;">
+        Logout
+      </button>
+    </div>
+
+  </nav>
+
+  <main>
+
+    <section class="shop-header">
+      <h1>Shop Urban Threads</h1>
+      <p>Find your everyday streetwear.</p>
+    </section>
+
+    <section class="filters">
+
+      <button class="filter-btn active" data-category="All">
+        All
+      </button>
+
+      <button class="filter-btn" data-category="Hoodies">
+        Hoodies
+      </button>
+
+      <button class="filter-btn" data-category="T-shirts">
+        T-Shirts
+      </button>
+
+      <button class="filter-btn" data-category="Sneakers">
+        Sneakers
+      </button>
+
+      <button class="filter-btn" data-category="Accessories">
+        Accessories
+      </button>
+
+    </section>
+
+    <p id="loadingMessage" class="loading">
+      Loading products...
+    </p>
+
+    <p id="errorMessage" class="error-message"></p>
+
+    <section class="shop" id="shop"></section>
+
+  </main>
+
+  <script type="module" src="js/main.js"></script>
+
+</body>
+</html>
