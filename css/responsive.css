@@ -1,0 +1,66 @@
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .auth-container {
+    flex-direction: column;
+    gap: 30px;
+    padding: 25px;
+  }
+
+  .auth-card {
+    flex: none;
+    max-width: 100%;
+  }
+
+  .auth-card h2 {
+    font-size: 24px;
+  }
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #hero h1 {
+    font-size: 36px;
+  }
+
+  .shop {
+    grid-template-columns: repeat(1, 280px);
+  }
+
+  .cart-item img {
+    width: 100px;
+    height: 100px;
+  }
+  .cart-item{
+    padding: 20px;
+    margin: 0 10px;
+  }
+.quantity-btn{
+    height:20px;
+    width:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.summary-box{
+    margin: 0 10px;
+}
+
+}
